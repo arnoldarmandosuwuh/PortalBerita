@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="RtlCompat">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="w,1:4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="@id/view1"
+        app:layout_constraintStart_toStartOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@id/view1" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/view2"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toTopOf="@id/view2" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Text Title"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvAuthor"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/ivPicture"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Text Author"
+        android:textColor="@android:color/black"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDateCreated"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/ivPicture"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvDateCreated"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Text Date Created"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toEndOf="@+id/ivPicture"
+        app:layout_constraintTop_toBottomOf="@+id/tvAuthor" />
+
+</android.support.constraint.ConstraintLayout>

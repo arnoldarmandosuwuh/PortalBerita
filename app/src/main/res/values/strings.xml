@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Portal Berita</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="refresh">Muat Ulang</string>
+
+    <!--navigation panel-->
+    <string name="nav_all_news">Semua Berita</string>
+    <string name="nav_add_news">Berita Baru</string>
+    <string name="nav_my_news">Berita Saya</string>
+    <string name="nav_search_news">Cari Berita</string>
+    <string name="nav_title_other">Menu Lainnya</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="nav_help">Panduan</string>
+    <string name="nav_about">Tentang</string>
+    <string name="nav_logout">Keluar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
